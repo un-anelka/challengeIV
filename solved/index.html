@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-app-starter</title>
+    <link href="add.remove.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>To do List</h1>
+    <form class="inputfield">
+        <input type="text" name="text" id="txt" required>
+        <button type="submit" class="btn-list">
+            +
+        </button>
+    </form>
+    <div class="wrapper">
+        <div class="container">
+            <ul id="list-group">
+                <!-- <li>Dev At <span>X</span></li> -->
+                <!-- <li>Dev At <span>X</span></li>
+                <li>Dev At <span>X</span></li>
+                <li>Dev At <span>X</span></li>
+                <li>Dev At <span>X</span></li>
+                <li>https://eygbl.referrals.selectminds.com/ <span>X</span></li> -->
+            </ul>
+            
+        </div>
+    
+        <div class="controls">
+            <p id="todosLeft"> <span class="pending"></span> Items left</p><!-- Add dynamic number -->
+            <div class="controls-list-div">
+                <ul class="controls-list" data-lists>
+                    <li id="all">All</li>
+                    <li id="active">Active</li>
+                    <li id="completed">Completed</li>
+                </ul>
+            </div>
+           <p id="clear-completed">Clear Completed</p> 
+        </div>
+    </div>
+
+</body>
+<script src="add-remove to be used.js"></script>
+</html>

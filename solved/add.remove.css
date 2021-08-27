@@ -1,0 +1,135 @@
+*{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(65deg, rgb(181,41,231), rgb(216,43,43));
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+h1{
+    color:rgb(251,177,39);
+    margin-top: 100px;
+}
+
+form{
+    margin-top:50px;
+    /* background: #fff; */
+    background: hsl(228, 45%, 44%);
+    box-shadow: -3px 6px 4px #222;
+    margin-bottom: 30px;
+}
+
+form input{
+    width:250px;
+    height:40px;
+    border:none;
+    background: hsl(228, 45%, 44%);
+}
+
+form button{
+    width: 50px;
+    height:40px;
+    border:none;
+    background: teal;
+    color:white;
+    outline:none;
+    cursor:pointer;
+
+}
+
+/* .wrapper{
+    border: red solid 3px;
+    background-image: url("/images/bg-desktop-dark.jpg");
+    background: hsl(228, 45%, 44%)
+} */
+
+
+.container{
+    margin-top:50px;
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+
+.container ul{
+    list-style:none;
+    width:500px; 
+}
+
+.container ul li{
+    width:100%;
+    /* background:#fff; */
+    height:40px;
+    line-height: 40px;
+    position:relative;
+    cursor:pointer;
+    display:block;
+    margin: 5px;
+    padding-left:50px;
+    box-shadow: -3px 6px 4px #222;
+    border: rgb(51, 49, 49) 3px solid;
+    transition: 0.5s linear;
+
+  
+}
+
+ul li span{
+    position: absolute;
+    top:0px;
+    right:0px;
+    text-align:center;
+    background:#e00;
+    width: 50px;
+
+}
+
+ul li input[type='checkbox']{
+    background: black;
+    position: absolute;
+    top:14px;
+    left:0px;
+    text-align:center;
+    /* background:#e00; */
+    width: 50px;
+    border: solid red 3px;
+}
+
+/* controls */
+
+.controls{
+    width:500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#todosLeft, #clear-completed {
+    flex: 1;
+    margin-left: 6px;
+}
+
+.controls-list-div{
+    flex:2;
+    margin-left: 3px;
+}
+
+
+.controls-list-div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -60px;
+   
+}
+.controls-list-div ul li{
+    margin-left:30px;
+    list-style: none;
+}
